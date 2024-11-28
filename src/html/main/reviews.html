@@ -3,13 +3,67 @@
         <button class="reviews__button">Відгуки</button>
         <ul class="reviews__list reviews-list">
             <li><button class="reviews-list__button">Світлана</button>
-                <img class="reviews-list__picture" src="" alt="avatar">
+                <picture class="reviews-list__picture">
+                    <source srcset="
+                    ./img/main/cat/cat-420-1x.avif 1x,
+                    ./img/main/cat/cat-420-1x.avif 2x,
+                    " 
+                    type="image/avif" 
+                    media="(max-width: 767.9px)"
+                    />
+                    <source srcset="
+                    ./img/main/cat/cat-420-1x.webp 1x,
+                    ./img/main/cat/cat-420-1x.webp 2x,
+                    " 
+                    type="image/webp"
+                    media="(max-width: 767.9px)"
+                    />
+                    <source srcset="
+                    ./img/main/cat/cat-420-1x.jpg 1x,
+                    ./img/main/cat/cat-420-1x.jpg 2x,
+                    "  
+                    media="(max-width: 767.9px)"
+                    />
+                    <img
+                src="./img/main/cat/cat-420-1x.jpg"
+                class="hobbies__picture"
+                alt="cat"
+                loading="lazy"
+                />
+                </picture>
                 <p class="reviews-list__text"> Мені подобається, що на Сайті багато різних напрямків – від кулінарії до
                     малювання. Дуже зручно, що все на одному місці. ще...</p>
             </li>
             <li>
                 <button class="reviews-list__button">Олена</button>
-                <img class="reviews-list__picture" src="" alt="avatar">
+                <picture class="reviews-list__picture">
+                    <source srcset="
+                    ./img/main/flower_red/flower_red-420-1x.avif 1x,
+                    ./img/main/flower_red/flower_red-420-1x.avif 2x,
+                    " 
+                    type="image/avif" 
+                    media="(max-width: 767.9px)"
+                    />
+                    <source srcset="
+                    ./img/main/flower_red/flower_red-420-1x.webp 1x,
+                    ./img/main/flower_red/flower_red-420-1x.webp 2x,
+                    " 
+                    type="image/webp"
+                    media="(max-width: 767.9px)"
+                    />
+                    <source srcset="
+                    ./img/main/flower_red/flower_red-420-1x.jpg 1x,
+                    ./img/main/flower_red/flower_red-420-1x.jpg 2x,
+                    "  
+                    media="(max-width: 767.9px)"
+                    />
+                    <img
+                src="./img/main/flower_red/flower_red-420-1x.jpg"
+                class="hobbies__picture"
+                alt="flower_red"
+                loading="lazy"
+                />
+                </picture>
                 <p class="reviews-list__text">Сайт трохи простий на вигляд, але функціональний. Я користуюсь ним для
                     пошуку ідей для саморобок з дітьми. Зручно і ще...</p>
             </li>
