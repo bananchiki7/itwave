@@ -1,0 +1,55 @@
+.container {
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.reviews > .container {
+  padding: 18px 30px 38px 30px;
+  background-color: $color-light-purple;
+}
+
+.reviews {
+  padding-bottom: 45px;
+  padding-top: 15px;
+  background-color: $color-grey;
+
+  &__button {
+    padding: 3px 30px;
+    margin-bottom: 30px;
+    font-family: "Kdam Thmor";
+    font-size: 15px;
+    color: $color-yellow;
+    background-color: inherit;
+    border: 3px solid $color-yellow;
+    border-radius: 10px;
+  }
+
+  &__list {
+  }
+}
+
+.reviews-list {
+  &__button {
+    padding: 4px 10px;
+    font-family: "Inter", serif;
+    font-size: 10px;
+    line-height: 1.2;
+    color: $color-white;
+    border: 1px solid $color-yellow;
+    border-radius: 5px;
+    background-color: inherit;
+  }
+
+  &__picture {
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+  }
+
+  &__text {
+    font-family: Inter;
+    font-size: 10px;
+    color: $color-white;
+    line-height: 1.2;
+  }
+}

@@ -1,0 +1,50 @@
+.container {
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+// * {
+//     font-family: 'Inter', sans-serif;
+// }
+
+.challenges > .container {
+  padding: 18px 30px 38px 30px;
+  background-color: $color-light-purple;
+}
+.challenges {
+  background-color: $color-grey;
+
+  &__button {
+    padding: 3px 30px;
+    margin-bottom: 30px;
+    font-family: "Kdam Thmor";
+    font-size: 15px;
+    color: $color-yellow;
+    background-color: inherit;
+    border: 3px solid $color-yellow;
+    border-radius: 10px;
+  }
+
+  &__form {
+  }
+}
+.challenges-form {
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__label {
+    font-family: "K2D", serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: $color-dark-purple;
+  }
+
+  &__input { 
+    border: 1px solid $color-yellow;
+    background-color: black;
+  }
+}
