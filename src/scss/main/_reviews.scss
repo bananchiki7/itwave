@@ -1,8 +1,3 @@
-.container {
-  max-width: 440px;
-  margin: 0 auto;
-}
-
 .reviews > .container {
   padding: 18px 30px 38px 30px;
   background-color: $color-light-purple;
@@ -49,7 +44,7 @@
   &__text {
     font-family: Inter;
     font-size: 10px;
-    color: $color-white;
     line-height: 1.2;
+    color: $color-white;
   }
 }
