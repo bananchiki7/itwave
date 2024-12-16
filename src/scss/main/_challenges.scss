@@ -1,13 +1,16 @@
-.challenges > .container {
-  padding: 18px 30px 38px 30px;
-  background-color: $color-light-purple;
-}
 .challenges {
   background-color: $color-grey;
+  
+  &__container {
+    padding: 18px 30px 38px 30px;
+    background-color: $color-light-purple;
+    max-width: 440px;
+    margin: 0 auto;
+  }
 
   &__button {
     padding: 3px 30px;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     font-family: "Kdam Thmor";
     font-size: 15px;
     color: $color-yellow;
@@ -27,6 +30,9 @@
   }
 
   &__label {
+    position: relative;
+    display: flex;
+    padding-left: 40px;
     font-family: "K2D", serif;
     font-size: 12px;
     font-weight: 700;
@@ -35,26 +41,32 @@
   }
 
   &__input {
-    display: none;
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
   }
 
   &__text {
-    height: 12px;
-    width: 12px;
-    border: 1px solid gray;
-    display: inline-block;
-    position: relative;
-    background-color: #fff;
-    border-radius: 2px;
-    padding: 3px;
-  }
-  
-  [type=checkbox]:checked + &__text:before {
-    content: '\2714';
     position: absolute;
-    top: -5px;
-    left: 0;
-    font-size:23px;
-    color:green;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    margin-left: -48px;
+    border: 3px solid $color-yellow;
+    border-radius: 5px;
+    background-color: inherit;
+    cursor: pointer;
+  }
+
+  &__input:checked + &__text:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: $color-yellow;
   }
 }

@@ -1,6 +1,12 @@
 .header {
-  padding: 13px 30px 20px 30px;
+  padding: 13px 0 20px 0;
+  border-bottom: 20px solid $color-purple;
   background-color: $color-dark-purple;
+
+  &__container {
+    max-width: 440px;
+    margin: 0 auto;
+  }
 
   &__wraper {
     display: flex;
@@ -46,5 +52,36 @@
   width: 40px;
   height: 40px;
   &__picture {
+  }
+}
+
+@media (min-width: 786px) {
+  .header {
+    padding: 35px 0 30px 0;
+    border-bottom: 50px solid $color-purple;
+
+    &__wraper {
+    }
+
+    &__menu {
+    }
+
+    &__search {
+    }
+
+    &__avatar {
+    }
+  }
+  .header-menu {
+    &__picture {
+    }
+  }
+  .header-search {
+    input {
+    }
+  }
+  .header-avatar {
+    &__picture {
+    }
   }
 }

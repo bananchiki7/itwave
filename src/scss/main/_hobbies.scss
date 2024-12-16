@@ -3,12 +3,17 @@
   background-color: $color-grey;
   padding-bottom: 45px;
 
+  &__container {
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
-    height: 500px;
     justify-content: space-between;
     align-content: space-between;
+    height: 500px;
     padding: 32px 28px;
     background-color: $color-yellow;
     border-radius: 25px;
@@ -18,7 +23,7 @@
     position: relative;
   }
 
-  &__button{
+  &__button {
     border: none;
     border-radius: 0 0 0 25px;
   }
@@ -49,7 +54,7 @@
     top: 200px;
     left: 0;
     width: 100%;
-    height: 104px;
+    padding: 25px 0;
     background-color: $color-pink;
   }
 }
@@ -65,5 +70,44 @@
     letter-spacing: 0.2em;
     color: $color-yellow;
     background-color: inherit;
+  }
+}
+
+@media (min-width: 768px) {
+  .hobbies {
+    &__container {
+      max-width: 700px;
+    }
+
+    &__list {
+    }
+
+    &__item {
+    }
+
+    &__button {
+    }
+
+    &__picture {
+    }
+
+    &__text {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+
+    &__line {
+      padding: 15px 0;
+    }
+  }
+  .hobbies-line {
+    &__button {
+      width: 350px;
+      height: 70px;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
   }
 }
