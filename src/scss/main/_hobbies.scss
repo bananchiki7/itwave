@@ -80,6 +80,8 @@
     }
 
     &__list {
+      height: 550px;
+      padding: 35px 34px 18px 30px;
     }
 
     &__item {
@@ -89,6 +91,8 @@
     }
 
     &__picture {
+      width: 286px;
+      height: 185px
     }
 
     &__text {
@@ -98,6 +102,7 @@
     }
 
     &__line {
+      top: 230px;
       padding: 15px 0;
     }
   }

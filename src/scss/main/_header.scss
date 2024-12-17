@@ -43,6 +43,13 @@
     padding: 5px;
     border: none;
     border-radius: 5px;
+    font-family: Inter;
+    font-size: 15px;
+    line-height: 1.21;
+  }
+
+  &__input::placeholder{
+    color: $color-purple;
   }
 }
 .header-avatar {
@@ -55,33 +62,50 @@
   }
 }
 
-@media (min-width: 786px) {
+@media (min-width: 768px) {
   .header {
     padding: 35px 0 30px 0;
     border-bottom: 50px solid $color-purple;
 
+    &__container {
+      max-width: 700px;
+    }
+
     &__wraper {
+      padding: 0 40px 0 30px;
     }
 
     &__menu {
+      width: 35px;
+      height: 35px;
     }
 
     &__search {
     }
 
     &__avatar {
+      width: 55px;
+      height: 55px;
     }
   }
   .header-menu {
     &__picture {
+      width: 45px;
+      height: 45px;
     }
   }
   .header-search {
     input {
+      width: 410px;
+      height: 35px;
+      font-size: 20px;
+      line-height: 1.21;
     }
   }
   .header-avatar {
     &__picture {
+      width: 45px;
+      height: 45px;
     }
   }
 }
