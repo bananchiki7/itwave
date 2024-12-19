@@ -1,0 +1,63 @@
+.hobbies {
+  background-color: $color-light-purple;
+  padding: 40px 0;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  &__input {
+    width: 305px;
+    height: 25px;
+    padding: 5px 0 5px 15px;
+    margin-bottom: 45px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  &__input::before {
+    content: url("../img/svg/arrowLeft.svg");
+    position: absolute;
+
+    width: 11px;
+    height: 15px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+.hobbies-list {
+  &_picture {
+    width: 100%;
+  }
+
+  &__button {
+    border: none;
+    background-color: inherit;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25px;
+    border-bottom: 3px solid $color-yellow;
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 95px;
+    font-family: Kdam Thmor;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 0.4em;
+    color: $color-white;
+  }
+}

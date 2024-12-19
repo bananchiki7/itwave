@@ -1,12 +1,24 @@
+$color-yellow: #FFEF89;
+$color-black: #211E29;
+$color-grey: #423D51;
+$color-pink: #CBABC2;
+$color-red: #885D66;
+$color-purple: #874B92;
+$color-dark-purple: #473148;
+$color-pastel-purple: #644F5E;
+$color-light-purple: #8A7685;
+
+$color-white: #FFFFFF;
 @import "./universal/uni";
 
-@import "./main/about";
-@import "./main/challenges";
-@import "./main/footer";
-@import "./main/header";
-@import "./main/hobbies";
-@import "./main/registration";
-@import "./main/reviews";
+// @import "./main/about";
+// @import "./main/challenges";
+// @import "./main/footer";
+// @import "./main/header";
+// @import "./main/hobbies";
+// @import "./main/registration";
+// @import "./main/reviews";
+@import "./hobbies/hobbies";
 @font-face {
   font-family: "K2D";
   src: url("../fonts/K2D-Regular.woff2") format("woff2");
