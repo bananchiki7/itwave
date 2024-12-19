@@ -48,7 +48,7 @@
     line-height: 1.21;
   }
 
-  &__input::placeholder{
+  &__input::placeholder {
     color: $color-purple;
   }
 }
@@ -58,8 +58,6 @@
   align-items: center;
   width: 40px;
   height: 40px;
-  &__picture {
-  }
 }
 
 @media (min-width: 768px) {
@@ -106,6 +104,38 @@
     &__picture {
       width: 45px;
       height: 45px;
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  .header {
+    &__container {
+    }
+
+    &__wraper {
+    }
+
+    &__menu {
+    }
+
+    &__search {
+    }
+
+    &__avatar {
+    }
+  }
+  .header-menu {
+    &__picture {
+    }
+  }
+  .header-search {
+    &__input {
+      width: calc(200px  + (305 - 200) * ((100vw - 320px) / (479 - 320)));
+    }
+  }
+  .header-avatar {
+    &__picture {
     }
   }
 }
