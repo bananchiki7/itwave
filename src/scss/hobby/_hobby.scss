@@ -1,4 +1,4 @@
-.hobbies {
+.hobby {
   background-color: $color-light-purple;
   padding: 40px 0;
   &__container {
@@ -18,21 +18,28 @@
     border-radius: 5px;
   }
 
-  &__input::before {
-    content: url("../img/svg/arrowLeft.svg");
-    position: absolute;
-
-    width: 11px;
-    height: 15px;
+  &__input::placeholder{
+    color: $color-purple;
   }
 
   &__list {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 25px;
   }
+
+  &__button {
+    position: absolute;
+    top: 42px;
+    left: 45px;
+    width: 11px;
+    height: 15px;
+    border: none;
+    background-color: inherit;
+  }
 }
-.hobbies-list {
+.hobby-list {
   &_picture {
     width: 100%;
   }

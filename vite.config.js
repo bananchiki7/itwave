@@ -4,13 +4,8 @@ import injectHTML from "vite-plugin-html-inject";
 import FullReload from "vite-plugin-full-reload";
 
 export default defineConfig({
-  // base: '/it-wave/',
   root: "src",
-  // server: {
-  //   hmr: {
-  //     overlay: false,
-  //   },
-  // },
+
   build: {
     target: ["es2022", "chrome89", "firefox89", "safari15"],
     rollupOptions: {
