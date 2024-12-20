@@ -6,7 +6,7 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    column-gap: 23px;
     row-gap: 135px;
     padding: 32px 28px;
     background-color: $color-yellow;
@@ -30,8 +30,9 @@
   }
 
   &__picture {
-    width: 180px;
-    height: 150px;
+    display: block;
+    height: inherit;
+    width: inherit;
     border-radius: 0 0 0 25px;
   }
 
@@ -89,20 +90,14 @@
 @media (max-width: 479px) {
   .hobbies {
     &__list {
-      row-gap: 120px;
-      padding: calc(25px + (32 - 25) * ((100vw - 320px) / (479 - 320))) calc(20px + (28 - 20) * ((100vw - 320px) / (479 - 320)));
-    }
-
-    &__item {
+      column-gap: calc(10px + (23 - 10) * ((100vw - 320px) / (479 - 320)));
+      row-gap: calc(100px + (135 - 100) * ((100vw - 320px) / (479 - 320)));
+      padding: calc(25px + (32 - 25) * ((100vw - 320px) / (479 - 320)))
+        calc(20px + (28 - 20) * ((100vw - 320px) / (479 - 320)));
     }
 
     &__button {
-      width: calc(135px + (180 - 135) * ((100vw - 320px) / (479 - 320)));
-      height: calc(110px + (150 - 110) * ((100vw - 320px) / (479 - 320)));
-    }
-
-    &__picture {
-      width: calc(135px + (180 - 135) * ((100vw - 320px) / (479 - 320)));
+      width: calc(125px + (180 - 125) * ((100vw - 320px) / (479 - 320)));
       height: calc(110px + (150 - 110) * ((100vw - 320px) / (479 - 320)));
     }
 
@@ -113,16 +108,14 @@
 
     &__line {
       top: calc(150px + (200 - 150) * ((100vw - 320px) / (479 - 320)));
+      padding: calc(20px + (25 - 20) * ((100vw - 320px) / (479 - 320))) 0;
     }
   }
   .hobbies-line {
     &__button {
-      height: 50px;
-
       width: calc(190px + (250 - 190) * ((100vw - 320px) / (479 - 320)));
-    }
-
-    &__link {
+      height: calc(35px + (50 - 35) * ((100vw - 320px) / (479 - 320)));
+      font-size: calc(15px + (25 - 15) * ((100vw - 320px) / (479 - 320)));
     }
   }
 }
@@ -130,16 +123,12 @@
 @media (min-width: 768px) {
   .hobbies {
     &__list {
-      height: 550px;
       padding: 35px 34px 18px 30px;
+      column-gap: 63px;
+      row-gap: 128px;
     }
 
     &__button {
-      width: 286px;
-      height: 185px;
-    }
-
-    &__picture {
       width: 286px;
       height: 185px;
     }
