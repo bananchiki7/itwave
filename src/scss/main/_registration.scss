@@ -6,11 +6,6 @@
   background-position: center;
   background-size: 100% 100%;
 
-  &__container {
-    max-width: 440px;
-    margin: 0 auto;
-  }
-
   &__line {
     position: absolute;
     left: 0;
@@ -31,9 +26,6 @@
   .registration {
     height: 395px;
     background-image: url("../img/main/registration/registration-420-1x.avif");
-    &__container {
-      max-width: 700px;
-    }
 
     &__line {
       height: 50px;

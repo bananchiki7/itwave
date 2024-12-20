@@ -3,11 +3,6 @@
   border-bottom: 20px solid $color-purple;
   background-color: $color-dark-purple;
 
-  &__container {
-    max-width: 440px;
-    margin: 0 auto;
-  }
-
   &__wraper {
     display: flex;
     justify-content: space-between;
@@ -21,7 +16,11 @@
     background-color: inherit;
   }
 
-  &__search {
+  &__menu:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      transition: 0.5s;
   }
 
   &__avatar {
@@ -31,9 +30,12 @@
     border-radius: 50px;
     background-color: $color-purple;
   }
-}
-.header-menu {
-  &__picture {
+
+  &__avatar:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      transition: 0.5s;
   }
 }
 .header-search {
@@ -60,14 +62,17 @@
   height: 40px;
 }
 
+@media (max-width: 479px) {
+  .header-search {
+    &__input {
+      width: calc(200px + (305 - 200) * ((100vw - 320px) / (479 - 320)));
+    }
+  }
+}
 @media (min-width: 768px) {
   .header {
     padding: 35px 0 30px 0;
     border-bottom: 50px solid $color-purple;
-
-    &__container {
-      max-width: 700px;
-    }
 
     &__wraper {
       padding: 0 40px 0 30px;
@@ -76,9 +81,6 @@
     &__menu {
       width: 45px;
       height: 45px;
-    }
-
-    &__search {
     }
 
     &__avatar {
@@ -108,34 +110,3 @@
   }
 }
 
-@media (max-width: 479px) {
-  .header {
-    &__container {
-    }
-
-    &__wraper {
-    }
-
-    &__menu {
-    }
-
-    &__search {
-    }
-
-    &__avatar {
-    }
-  }
-  .header-menu {
-    &__picture {
-    }
-  }
-  .header-search {
-    &__input {
-      width: calc(200px  + (305 - 200) * ((100vw - 320px) / (479 - 320)));
-    }
-  }
-  .header-avatar {
-    &__picture {
-    }
-  }
-}

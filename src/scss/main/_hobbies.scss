@@ -3,17 +3,11 @@
   background-color: $color-grey;
   padding-bottom: 45px;
 
-  &__container {
-    max-width: 440px;
-    margin: 0 auto;
-  }
-
   &__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-between;
-    height: 500px;
+    row-gap: 135px;
     padding: 32px 28px;
     background-color: $color-yellow;
     border-radius: 25px;
@@ -24,8 +18,15 @@
   }
 
   &__button {
+    width: 180px;
+    height: 150px;
     border: none;
     border-radius: 0 0 0 25px;
+  }
+
+  &__button:hover {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 15px 50px 4px;
+    transition: 0.5s;
   }
 
   &__picture {
@@ -46,7 +47,6 @@
   }
 
   &__line {
-    z-index: 2;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -72,35 +72,76 @@
     background-color: inherit;
   }
 
-  &__link{
+  &__button:hover {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 15px 50px 4px;
+    transition: 0.5s;
+  }
+
+  &__link {
     color: $color-yellow;
   }
 
-  &__link:visited{
+  &__link:visited {
     color: $color-yellow;
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 479px) {
   .hobbies {
-    &__container {
-      max-width: 700px;
-    }
-
     &__list {
-      height: 550px;
-      padding: 35px 34px 18px 30px;
+      row-gap: 120px;
+      padding: calc(25px + (32 - 25) * ((100vw - 320px) / (479 - 320))) calc(20px + (28 - 20) * ((100vw - 320px) / (479 - 320)));
     }
 
     &__item {
     }
 
     &__button {
+      width: calc(135px + (180 - 135) * ((100vw - 320px) / (479 - 320)));
+      height: calc(110px + (150 - 110) * ((100vw - 320px) / (479 - 320)));
+    }
+
+    &__picture {
+      width: calc(135px + (180 - 135) * ((100vw - 320px) / (479 - 320)));
+      height: calc(110px + (150 - 110) * ((100vw - 320px) / (479 - 320)));
+    }
+
+    &__text {
+      right: calc(8px + (14 - 8) * ((100vw - 320px) / (479 - 320)));
+      font-size: calc(13px + (15 - 13) * ((100vw - 320px) / (479 - 320)));
+    }
+
+    &__line {
+      top: calc(150px + (200 - 150) * ((100vw - 320px) / (479 - 320)));
+    }
+  }
+  .hobbies-line {
+    &__button {
+      height: 50px;
+
+      width: calc(190px + (250 - 190) * ((100vw - 320px) / (479 - 320)));
+    }
+
+    &__link {
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .hobbies {
+    &__list {
+      height: 550px;
+      padding: 35px 34px 18px 30px;
+    }
+
+    &__button {
+      width: 286px;
+      height: 185px;
     }
 
     &__picture {
       width: 286px;
-      height: 185px
+      height: 185px;
     }
 
     &__text {
@@ -123,11 +164,11 @@
       line-height: 1.4;
     }
 
-    &__link{
+    &__link {
       color: $color-yellow;
     }
 
-    &__link:visited{
+    &__link:visited {
       color: $color-yellow;
     }
   }

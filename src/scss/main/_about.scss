@@ -2,11 +2,6 @@
   background-color: $color-grey;
   padding: 11px 0 65px 0;
 
-  &__container {
-    max-width: 440px;
-    margin: 0 auto;
-  }
-
   &__title {
     display: flex;
     justify-content: center;
@@ -62,7 +57,7 @@
     background-color: $color-pink;
     border-radius: 0 25px 0 0;
   }
-
+  
   &__text-small {
     font-family: "Kdam Thmor";
     font-size: 15px;
@@ -77,12 +72,27 @@
   }
 }
 
-@media (min-width: 768px) {
-  .about {
-    &__container {
-      max-width: 700px;
+@media (max-width: 479px) {
+  .about-info {
+    &__card-expression {
+      right: calc(60px + (90 - 60) * ((100vw - 320px) / (479 - 320)));
+      width: calc(180px + (235 - 180) * ((100vw - 320px) / (479 - 320)));
+      padding: 3px calc(20px + (36 - 20) * ((100vw - 320px) / (479 - 320)));
     }
 
+    &__text {
+    font-size: calc(13px + (15 - 13) * ((100vw - 320px) / (479 - 320)));
+    }
+
+    &__card-find {
+      right: calc(90px + (157 - 90) * ((100vw - 320px) / (479 - 320)));
+      width: calc(180px + (200 - 180) * ((100vw - 320px) / (479 - 320)));
+      padding: 2.5px calc(20px + (29 - 20) * ((100vw - 320px) / (479 - 320)));
+    }
+  }
+}
+@media (min-width: 768px) {
+  .about {
     &__title {
       padding: 5.5px 0;
     }
@@ -120,12 +130,10 @@
       padding: 8px 39px 8px 39px;
     }
 
-    &__text-small {
-    }
-
     &__picture {
       width: 368px;
       height: 245px;
     }
   }
 }
+
