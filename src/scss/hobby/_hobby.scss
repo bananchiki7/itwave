@@ -18,7 +18,7 @@
     border-radius: 5px;
   }
 
-  &__input::placeholder{
+  &__input::placeholder {
     color: $color-purple;
   }
 
@@ -66,5 +66,23 @@
     line-height: 1;
     letter-spacing: 0.4em;
     color: $color-white;
+  }
+}
+
+@media (max-width: 479px) {
+  .hobby {
+    &__button {
+      left: calc(25px + (45 - 25) * ((100vw - 320px) / (479 - 320)));
+    }
+
+    &__input {
+      width: calc(190px + (305 - 190) * ((100vw - 320px) / (479 - 320)));
+    }
+  }
+  .hobby-list {
+    &__title {
+      bottom: calc(70px + (95 - 70) * ((100vw - 320px) / (479 - 320)));
+      font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (479 - 320)));
+    }
   }
 }
