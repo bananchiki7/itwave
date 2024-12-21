@@ -1,12 +1,11 @@
 .hobby {
   background-color: $color-light-purple;
   padding: 40px 0;
+  
   &__container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 400px;
-    margin: 0 auto;
   }
 
   &__input {
