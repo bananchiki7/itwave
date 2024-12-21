@@ -12,7 +12,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "src/index.html"),
         nested: resolve(__dirname, "src/hobby.html"),
-        // nestedTwo: resolve(__dirname, "src/profile.html"),
+        nestedTwo: resolve(__dirname, "src/review.html"),
         // nestedFour: resolve(__dirname, "src/advert.html"),
       },
     },
