@@ -13,7 +13,7 @@ export default defineConfig({
         main: resolve(__dirname, "src/index.html"),
         nested: resolve(__dirname, "src/hobby.html"),
         nestedTwo: resolve(__dirname, "src/review.html"),
-        // nestedFour: resolve(__dirname, "src/advert.html"),
+        nestedFour: resolve(__dirname, "src/challenge.html"),
       },
     },
     outDir: "../dist",
