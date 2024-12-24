@@ -1,7 +1,7 @@
 .review {
   position: relative;
   padding-bottom: 106.15px;
-  background-color: #8a7685;
+  background-color: $color-light-purple;
 
   &__container {
     display: flex;
@@ -12,7 +12,7 @@
     padding-left: 27px;
     padding-right: 27px;
     border-radius: 15px;
-    background: #473148;
+    background: $color-dark-purple;
   }
 
   &__button {
@@ -45,9 +45,9 @@
     font-family: "Kdam Thmor";
     font-size: 15px;
     line-height: 2;
-    color: #ffef89;
+    color: $color-yellow;
     letter-spacing: 3px;
-    border: 3px solid #ffef89;
+    border: 3px solid $color-yellow;
     border-radius: 10px;
   }
 
@@ -65,7 +65,7 @@
     font-family: Inter;
     font-size: 10px;
     border: none;
-    background-color: #cbabc2;
+    background-color: $color-pink;
   }
 }
 
