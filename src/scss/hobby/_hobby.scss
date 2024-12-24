@@ -1,7 +1,7 @@
 .hobby {
   background-color: $color-light-purple;
   padding: 40px 0;
-  
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -82,6 +82,60 @@
     &__title {
       bottom: calc(70px + (95 - 70) * ((100vw - 320px) / (479 - 320)));
       font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (479 - 320)));
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .sport {
+    &__wrapper {
+    }
+
+    &__button {
+    }
+
+    &__link {
+    }
+
+    &__picture {
+    }
+
+    &__title {
+    }
+
+    &__background {
+    }
+
+    &__container {
+      width: 690px;
+    }
+
+    &__input {
+    }
+
+    &__list {
+    }
+  }
+  .sport-list {
+    &__item {
+    }
+
+    &__info {
+    }
+
+    &__title {
+    }
+
+    &__text {
+    }
+
+    &__visual {
+    }
+
+    &__picture {
+    }
+
+    &__button {
     }
   }
 }
