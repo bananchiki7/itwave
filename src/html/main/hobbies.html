@@ -2,46 +2,70 @@
     <div class="container hobbies__container">
         <ul class="hobbies__list">
             <li class="hobbies__item">
+                <button class="hobbies__button">
+                    <picture class="hobbies__picture">
+                        <source srcset="
+                        ./img/main/art/art-768-1x.avif 1x,
+                        ./img/main/art/art-768-2x.avif 2x,
+                        " type="image/avif" media="(min-width: 768px)" />
+                        <source srcset="
+                        ./img/main/art/art-768-1x.webp 1x,
+                        ./img/main/art/art-768-2x.webp 2x,
+                        " type="image/webp" media="(min-width: 768px)" />
+                        <source srcset="
+                        ./img/main/art/art-768-1x.jpg 1x,
+                        ./img/main/art/art-768-2x.jpg 2x,
+                        " media="(min-width: 768px)" />
+                        <source srcset="
+                        ./img/main/art/art-480-1x.avif 1x,
+                        ./img/main/art/art-480-1x.avif 2x,
+                        " type="image/avif" media="(max-width: 767.9px)" />
+                        <source srcset="
+                        ./img/main/art/art-480-1x.webp 1x,
+                        ./img/main/art/art-480-1x.webp 2x,
+                        " type="image/webp" media="(max-width: 767.9px)" />
+                        <source srcset="
+                        ./img/main/art/art-480-1x.jpg 1x,
+                        ./img/main/art/art-480-1x.jpg 2x,
+                        " media="(max-width: 767.9px)" />
+                        <img src="./img/main/art/art-480-1x.jpg" class="hobbies__picture" alt="paint" loading="lazy" />
+                    </picture>
+                </button>
+                <p class="hobbies__text">Мистецтво</p>
+            </li>
+            <li class="hobbies__item">
                 <a class="hobbies__link" href="./sport.html">
                     <button class="hobbies__button">
                         <picture class="hobbies__picture">
                             <source srcset="
-                        ./img/main/paint/paint-420-1x.avif 1x,
-                        ./img/main/paint/paint-420-1x.avif 2x,
+                        ./img/main/gym/gym-768-1x.avif 1x,
+                        ./img/main/gym/gym-768-2x.avif 2x,
+                        " type="image/avif" media="(min-width: 768px)" />
+                            <source srcset="
+                        ./img/main/gym/gym-768-1x.webp 1x,
+                        ./img/main/gym/gym-768-2x.webp 2x,
+                        " type="image/webp" media="(min-width: 768px)" />
+                            <source srcset="
+                        ./img/main/gym/gym-768-1x.jpg 1x,
+                        ./img/main/gym/gym-768-2x.jpg 2x,
+                        " media="(min-width: 768px)" />
+                            <source srcset="
+                        ./img/main/gym/gym-480-1x.avif 1x,
+                        ./img/main/gym/gym-480-1x.avif 2x,
                         " type="image/avif" media="(max-width: 767.9px)" />
                             <source srcset="
-                        ./img/main/paint/paint-420-1x.webp 1x,
-                        ./img/main/paint/paint-420-1x.webp 2x,
+                        ./img/main/gym/gym-480-1x.webp 1x,
+                        ./img/main/gym/gym-480-1x.webp 2x,
                         " type="image/webp" media="(max-width: 767.9px)" />
                             <source srcset="
-                        ./img/main/paint/paint-420-1x.jpg 1x,
-                        ./img/main/paint/paint-420-1x.jpg 2x,
+                        ./img/main/gym/gym-480-1x.jpg 1x,
+                        ./img/main/gym/gym-480-1x.jpg 2x,
                         " media="(max-width: 767.9px)" />
-                            <img src="./img/main/paint/paint-420-1x.jpg" class="hobbies__picture" alt="paint"
+                            <img src="./img/main/gym/gym-480-1x.jpg" class="hobbies__picture" alt="gym"
                                 loading="lazy" />
                         </picture>
                     </button>
                 </a>
-                <p class="hobbies__text">Мистецтво</p>
-            </li>
-            <li class="hobbies__item">
-                <button class="hobbies__button">
-                    <picture class="hobbies__picture">
-                        <source srcset="
-                            ./img/main/gym/gym-420-1x.avif 1x,
-                            ./img/main/gym/gym-420-1x.avif 2x,
-                            " type="image/avif" media="(max-width: 767.9px)" />
-                        <source srcset="
-                            ./img/main/gym/gym-420-1x.webp 1x,
-                            ./img/main/gym/gym-420-1x.webp 2x,
-                            " type="image/webp" media="(max-width: 767.9px)" />
-                        <source srcset="
-                            ./img/main/gym/gym-420-1x.jpg 1x,
-                            ./img/main/gym/gym-420-1x.jpg 2x,
-                            " media="(max-width: 767.9px)" />
-                        <img src="./img/main/gym/gym-420-1x.jpg" class="hobbies__picture" alt="gym" loading="lazy" />
-                    </picture>
-                </button>
                 <p class="hobbies__text">Спорт</p>
             </li>
             <div class="hobbies__line hobbies-line">
@@ -53,18 +77,30 @@
                 <button class="hobbies__button">
                     <picture class="hobbies__picture">
                         <source srcset="
-                        ./img/main/sunset/sunset-420-1x.avif 1x,
-                        ./img/main/sunset/sunset-420-1x.avif 2x,
+                        ./img/main/sunset/sunset-768-1x.avif 1x,
+                        ./img/main/sunset/sunset-768-2x.avif 2x,
+                        " type="image/avif" media="(min-width: 768px)" />
+                        <source srcset="
+                        ./img/main/sunset/sunset-768-1x.webp 1x,
+                        ./img/main/sunset/sunset-768-2x.webp 2x,
+                        " type="image/webp" media="(min-width: 768px)" />
+                        <source srcset="
+                        ./img/main/sunset/sunset-768-1x.jpg 1x,
+                        ./img/main/sunset/sunset-768-2x.jpg 2x,
+                        " media="(min-width: 768px)" />
+                        <source srcset="
+                        ./img/main/sunset/sunset-480-1x.avif 1x,
+                        ./img/main/sunset/sunset-480-1x.avif 2x,
                         " type="image/avif" media="(max-width: 767.9px)" />
                         <source srcset="
-                        ./img/main/sunset/sunset-420-1x.webp 1x,
-                        ./img/main/sunset/sunset-420-1x.webp 2x,
+                        ./img/main/sunset/sunset-480-1x.webp 1x,
+                        ./img/main/sunset/sunset-480-1x.webp 2x,
                         " type="image/webp" media="(max-width: 767.9px)" />
                         <source srcset="
-                        ./img/main/sunset/sunset-420-1x.jpg 1x,
-                        ./img/main/sunset/sunset-420-1x.jpg 2x,
+                        ./img/main/sunset/sunset-480-1x.jpg 1x,
+                        ./img/main/sunset/sunset-480-1x.jpg 2x,
                         " media="(max-width: 767.9px)" />
-                        <img src="./img/main/sunset/sunset-420-1x.jpg" class="hobbies__picture" alt="sunset"
+                        <img src="./img/main/sunset/sunset-480-1x.jpg" class="hobbies__picture" alt="sunset"
                             loading="lazy" />
                     </picture>
                 </button>
@@ -74,18 +110,30 @@
                 <button class="hobbies__button">
                     <picture class="hobbies__picture">
                         <source srcset="
-                        ./img/main/math/math-420-1x.avif 1x,
-                        ./img/main/math/math-420-1x.avif 2x,
+                        ./img/main/math/math-768-1x.avif 1x,
+                        ./img/main/math/math-768-2x.avif 2x,
+                        " type="image/avif" media="(min-width: 768px)" />
+                        <source srcset="
+                        ./img/main/math/math-768-1x.webp 1x,
+                        ./img/main/math/math-768-2x.webp 2x,
+                        " type="image/webp" media="(min-width: 768px)" />
+                        <source srcset="
+                        ./img/main/math/math-768-1x.jpg 1x,
+                        ./img/main/math/math-768-2x.jpg 2x,
+                        " media="(min-width: 768px)" />
+                        <source srcset="
+                        ./img/main/math/math-480-1x.avif 1x,
+                        ./img/main/math/math-480-1x.avif 2x,
                         " type="image/avif" media="(max-width: 767.9px)" />
                         <source srcset="
-                        ./img/main/math/math-420-1x.webp 1x,
-                        ./img/main/math/math-420-1x.webp 2x,
+                        ./img/main/math/math-480-1x.webp 1x,
+                        ./img/main/math/math-480-1x.webp 2x,
                         " type="image/webp" media="(max-width: 767.9px)" />
                         <source srcset="
-                        ./img/main/math/math-420-1x.jpg 1x,
-                        ./img/main/math/math-420-1x.jpg 2x,
+                        ./img/main/math/math-480-1x.jpg 1x,
+                        ./img/main/math/math-480-1x.jpg 2x,
                         " media="(max-width: 767.9px)" />
-                        <img src="./img/main/math/math-420-1x.jpg" class="hobbies__picture" alt="math" loading="lazy" />
+                        <img src="./img/main/math/math-480-1x.jpg" class="hobbies__picture" alt="math" loading="lazy" />
                     </picture>
                 </button>
                 <p class="hobbies__text">Інтелектуальні</p>

@@ -13,27 +13,47 @@
             </div>
             <picture class="about-info__picture">
                 <source srcset="
-                ./img/main/pianino/pianino-420-1x.avif 1x,
-                ./img/main/pianino/pianino-420-1x.avif 2x,
+                ./img/main/pianino/pianino-768-1x.avif 1x,
+                ./img/main/pianino/pianino-768-2x.avif 2x,
+                " 
+                type="image/avif" 
+                media="(min-width: 768px)"
+                />
+                <source srcset="
+                ./img/main/pianino/pianino-768-1x.webp 1x,
+                ./img/main/pianino/pianino-768-2x.webp 2x,
+                " 
+                type="image/webp"
+                media="(min-width: 768px)"
+                />
+                <source srcset="
+                ./img/main/pianino/pianino-768-1x.jpg 1x,
+                ./img/main/pianino/pianino-768-2x.jpg 2x,
+                "  
+                media="(min-width: 768px)"
+                />
+                <source srcset="
+                ./img/main/pianino/pianino-480-1x.avif 1x,
+                ./img/main/pianino/pianino-480-1x.avif 2x,
                 " 
                 type="image/avif" 
                 media="(max-width: 767.9px)"
                 />
                 <source srcset="
-                ./img/main/pianino/pianino-420-1x.webp 1x,
-                ./img/main/pianino/pianino-420-1x.webp 2x,
+                ./img/main/pianino/pianino-480-1x.webp 1x,
+                ./img/main/pianino/pianino-480-1x.webp 2x,
                 " 
                 type="image/webp"
                 media="(max-width: 767.9px)"
                 />
                 <source srcset="
-                ./img/main/pianino/pianino-420-1x.jpg 1x,
-                ./img/main/pianino/pianino-420-1x.jpg 2x,
+                ./img/main/pianino/pianino-480-1x.jpg 1x,
+                ./img/main/pianino/pianino-480-1x.jpg 2x,
                 "  
                 media="(max-width: 767.9px)"
                 />
                 <img
-            src="./img/main/pianino/pianino-420-1x.avif"
+            src="./img/main/pianino/pianino-480-1x.avif"
             class="about-info__picture"
             alt="picture"
             loading="lazy"
