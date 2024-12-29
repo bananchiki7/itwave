@@ -1,12 +1,37 @@
 <section class="sport">
     <div class="sport__wrapper">
-        <button class="sport__button">
-            <a class="sport__link" href="./index.html">
-                <img class="sport__picture" src="./img/svg/arrowLeft.svg" alt="">
-            </a>
-        </button>
+        <a class="sport__link" href="./index.html">
+            <img class="sport__picture" src="./img/svg/arrowLeft.svg" alt="">
+        </a>
         <h3 class="sport__title">Спорт</h3>
-        <img class="sport__background" src="./img/sport/sport.png" alt="background" />
+        <picture class="sport__background">
+            <source srcset="
+            ./img/sport/gym_section/gym_section-768-1x.avif 1x,
+            ./img/sport/gym_section/gym_section-768-2x.avif 2x,
+            " type="image/avif" media="(min-width: 768px)" />
+            <source srcset="
+            ./img/sport/gym_section/gym_section-768-1x.webp 1x,
+            ./img/sport/gym_section/gym_section-768-2x.webp 2x,
+            " type="image/webp" media="(min-width: 768px)" />
+            <source srcset="
+            ./img/sport/gym_section/gym_section-768-1x.jpg 1x,
+            ./img/sport/gym_section/gym_section-768-2x.jpg 2x,
+            " media="(min-width: 768px)" />
+            <source srcset="
+            ./img/sport/gym_section/gym_section-480-1x.avif 1x,
+            ./img/sport/gym_section/gym_section-480-1x.avif 2x,
+            " type="image/avif" media="(max-width: 767.9px)" />
+            <source srcset="
+            ./img/sport/gym_section/gym_section-480-1x.webp 1x,
+            ./img/sport/gym_section/gym_section-480-1x.webp 2x,
+            " type="image/webp" media="(max-width: 767.9px)" />
+            <source srcset="
+            ./img/sport/gym_section/gym_section-480-1x.jpg 1x,
+            ./img/sport/gym_section/gym_section-480-1x.jpg 2x,
+            " media="(max-width: 767.9px)" />
+            <img src="./img/sport/gym_section/gym_section-480-1x.jpg" class="sport__background" alt="background"
+                loading="lazy" />
+        </picture>
     </div>
     <div class="container sport__container">
         <input class="sport__input" type="text" placeholder="пошук...">
@@ -21,8 +46,31 @@
                 <div class="sport-list__visual">
                     <picture class="sport-list__picture">
                         <source srcset="
-                        ./img/sport/hands.jpg" />
-                        <img class="sport-list__picture" src="./img/main/cat/cat-420-1x.jpg" alt="cat" loading="lazy" />
+                        ./img/sport/collage/collage-768-1x.avif 1x,
+                        ./img/sport/collage/collage-768-2x.avif 2x,
+                        " type="image/avif" media="(min-width: 768px)" />
+                        <source srcset="
+                        ./img/sport/collage/collage-768-1x.webp 1x,
+                        ./img/sport/collage/collage-768-2x.webp 2x,
+                        " type="image/webp" media="(min-width: 768px)" />
+                        <source srcset="
+                        ./img/sport/collage/collage-768-1x.jpg 1x,
+                        ./img/sport/collage/collage-768-2x.jpg 2x,
+                        " media="(min-width: 768px)" />
+                        <source srcset="
+                        ./img/sport/collage/collage-480-1x.avif 1x,
+                        ./img/sport/collage/collage-480-1x.avif 2x,
+                        " type="image/avif" media="(max-width: 767.9px)" />
+                        <source srcset="
+                        ./img/sport/collage/collage-480-1x.webp 1x,
+                        ./img/sport/collage/collage-480-1x.webp 2x,
+                        " type="image/webp" media="(max-width: 767.9px)" />
+                        <source srcset="
+                        ./img/sport/collage/collage-480-1x.jpg 1x,
+                        ./img/sport/collage/collage-480-1x.jpg 2x,
+                        " media="(max-width: 767.9px)" />
+                        <img src="./img/sport/collage/collage-480-1x.jpg" class="sport-list__picture" alt="collage picture"
+                            loading="lazy" />
                     </picture>
                     <button class="sport-list__button">зберегти</button>
                 </div>
@@ -37,8 +85,31 @@
                 <div class="sport-list__visual">
                     <picture class="sport-list__picture">
                         <source srcset="
-                        ./img/sport/hands.jpg" />
-                        <img class="sport-list__picture" src="./img/main/cat/cat-420-1x.jpg" alt="cat" loading="lazy" />
+                        ./img/sport/painting/painting-768-1x.avif 1x,
+                        ./img/sport/painting/painting-768-2x.avif 2x,
+                        " type="image/avif" media="(min-width: 768px)" />
+                        <source srcset="
+                        ./img/sport/painting/painting-768-1x.webp 1x,
+                        ./img/sport/painting/painting-768-2x.webp 2x,
+                        " type="image/webp" media="(min-width: 768px)" />
+                        <source srcset="
+                        ./img/sport/painting/painting-768-1x.jpg 1x,
+                        ./img/sport/painting/painting-768-2x.jpg 2x,
+                        " media="(min-width: 768px)" />
+                        <source srcset="
+                        ./img/sport/painting/painting-480-1x.avif 1x,
+                        ./img/sport/painting/painting-480-1x.avif 2x,
+                        " type="image/avif" media="(max-width: 767.9px)" />
+                        <source srcset="
+                        ./img/sport/painting/painting-480-1x.webp 1x,
+                        ./img/sport/painting/painting-480-1x.webp 2x,
+                        " type="image/webp" media="(max-width: 767.9px)" />
+                        <source srcset="
+                        ./img/sport/painting/painting-480-1x.jpg 1x,
+                        ./img/sport/painting/painting-480-1x.jpg 2x,
+                        " media="(max-width: 767.9px)" />
+                        <img src="./img/sport/painting/painting-480-1x.jpg" class="sport-list__picture" alt="background"
+                            loading="lazy" />
                     </picture>
                     <button class="sport-list__button">зберегти</button>
                 </div>
@@ -52,8 +123,31 @@
                 <div class="sport-list__visual">
                     <picture class="sport-list__picture">
                         <source srcset="
-                        ./img/sport/hands.jpg" />
-                        <img class="sport-list__picture" src="./img/main/cat/cat-420-1x.jpg" alt="cat" loading="lazy" />
+                        ./img/sport/illustration/illustration-768-1x.avif 1x,
+                        ./img/sport/illustration/illustration-768-2x.avif 2x,
+                        " type="image/avif" media="(min-width: 768px)" />
+                        <source srcset="
+                        ./img/sport/illustration/illustration-768-1x.webp 1x,
+                        ./img/sport/illustration/illustration-768-2x.webp 2x,
+                        " type="image/webp" media="(min-width: 768px)" />
+                        <source srcset="
+                        ./img/sport/illustration/illustration-768-1x.jpg 1x,
+                        ./img/sport/illustration/illustration-768-2x.jpg 2x,
+                        " media="(min-width: 768px)" />
+                        <source srcset="
+                        ./img/sport/illustration/illustration-480-1x.avif 1x,
+                        ./img/sport/illustration/illustration-480-1x.avif 2x,
+                        " type="image/avif" media="(max-width: 767.9px)" />
+                        <source srcset="
+                        ./img/sport/illustration/illustration-480-1x.webp 1x,
+                        ./img/sport/illustration/illustration-480-1x.webp 2x,
+                        " type="image/webp" media="(max-width: 767.9px)" />
+                        <source srcset="
+                        ./img/sport/illustration/illustration-480-1x.jpg 1x,
+                        ./img/sport/illustration/illustration-480-1x.jpg 2x,
+                        " media="(max-width: 767.9px)" />
+                        <img src="./img/sport/illustration/illustration-480-1x.jpg" class="sport-list__picture" alt="background"
+                            loading="lazy" />
                     </picture>
                     <button class="sport-list__button">зберегти</button>
                 </div>
