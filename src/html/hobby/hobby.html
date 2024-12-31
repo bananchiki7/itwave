@@ -1,34 +1,134 @@
 <section class="hobby">
     <div class="container hobby__container">
-            <a class="hobby__link" href="../index.html">
-                <img class="hobby__picture" src="./img/svg/arrowLeft.svg" alt="">
-            </a>
+        <a class="hobby__link" href="../index.html">
+            <img class="hobby__picture" src="./img/svg/arrowLeft.svg" alt="">
+        </a>
         <input class="hobby__input" type="text" placeholder="пошук...">
         <ul class="hobby__list">
             <li class="hobby-list__item">
-                <button class="hobby-list__button">
-                    <img class="hobby-list_picture" src="./img/hobbies/art.jpg" alt="">
-                </button>
+                <picture class="hobby-list_picture">
+                    <source srcset="
+                        ./img/hobies_by_section_art/hobies_by_section_art-768-1x.avif 1x,
+                        ./img/hobies_by_section_art/hobies_by_section_art-768-2x.avif 2x,
+                        " type="image/avif" media="(min-width: 768px)" />
+                    <source srcset="
+                        ./img/hobies_by_section_art/hobies_by_section_art-768-1x.webp 1x,
+                        ./img/hobies_by_section_art/hobies_by_section_art-768-2x.webp 2x,
+                        " type="image/webp" media="(min-width: 768px)" />
+                    <source srcset="
+                        ./img/hobies_by_section_art/hobies_by_section_art-768-1x.jpg 1x,
+                        ./img/hobies_by_section_art/hobies_by_section_art-768-2x.jpg 2x,
+                        " media="(min-width: 768px)" />
+                    <source srcset="
+                        ./img/hobies_by_section_art/hobies_by_section_art-480-1x.avif 1x,
+                        ./img/hobies_by_section_art/hobies_by_section_art-480-1x.avif 2x,
+                        " type="image/avif" media="(max-width: 767.9px)" />
+                    <source srcset="
+                        ./img/hobies_by_section_art/hobies_by_section_art-480-1x.webp 1x,
+                        ./img/hobies_by_section_art/hobies_by_section_art-480-1x.webp 2x,
+                        " type="image/webp" media="(max-width: 767.9px)" />
+                    <source srcset="
+                        ./img/hobies_by_section_art/hobies_by_section_art-480-1x.jpg 1x,
+                        ./img/hobies_by_section_art/hobies_by_section_art-480-1x.jpg 2x,
+                        " media="(max-width: 767.9px)" />
+                    <img src="./img/hobies_by_section_art/hobies_by_section_art-480-1x.jpg" class="hobby-list_picture"
+                        alt="hobbies-art" loading="lazy" />
+                </picture>
                 <h2 class="hobby-list__title">Мистецтво</h2>
             </li>
             <li class="hobby-list__item">
                 <a class="hobbies-list__link" href="./sport.html">
-                    <button class="hobby-list__button">
-                        <img class="hobby-list_picture" src="./img/hobbies/gym.jpg" alt="">
-                    </button>
+                    <picture class="hobby-list_picture">
+                        <source srcset="
+                            ./img/hobies_by_section_gym/hobies_by_section_gym-768-1x.avif 1x,
+                            ./img/hobies_by_section_gym/hobies_by_section_gym-768-2x.avif 2x,
+                            " type="image/avif" media="(min-width: 768px)" />
+                        <source srcset="
+                            ./img/hobies_by_section_gym/hobies_by_section_gym-768-1x.webp 1x,
+                            ./img/hobies_by_section_gym/hobies_by_section_gym-768-2x.webp 2x,
+                            " type="image/webp" media="(min-width: 768px)" />
+                        <source srcset="
+                            ./img/hobies_by_section_gym/hobies_by_section_gym-768-1x.jpg 1x,
+                            ./img/hobies_by_section_gym/hobies_by_section_gym-768-2x.jpg 2x,
+                            " media="(min-width: 768px)" />
+                        <source srcset="
+                            ./img/hobies_by_section_gym/hobies_by_section_gym-480-1x.avif 1x,
+                            ./img/hobies_by_section_gym/hobies_by_section_gym-480-1x.avif 2x,
+                            " type="image/avif" media="(max-width: 767.9px)" />
+                        <source srcset="
+                            ./img/hobies_by_section_gym/hobies_by_section_gym-480-1x.webp 1x,
+                            ./img/hobies_by_section_gym/hobies_by_section_gym-480-1x.webp 2x,
+                            " type="image/webp" media="(max-width: 767.9px)" />
+                        <source srcset="
+                            ./img/hobies_by_section_gym/hobies_by_section_gym-480-1x.jpg 1x,
+                            ./img/hobies_by_section_gym/hobies_by_section_gym-480-1x.jpg 2x,
+                            " media="(max-width: 767.9px)" />
+                        <img src="./img/hobies_by_section_gym/hobies_by_section_gym-480-1x.jpg"
+                            class="hobby-list_picture" alt="hobbies-gym" loading="lazy" />
+                    </picture>
                 </a>
                 <h2 class="hobby-list__title">Спорт</h2>
             </li>
             <li class="hobby-list__item">
-                <button class="hobby-list__button">
-                    <img class="hobby-list_picture" src="./img/hobbies/seesight.jpg" alt="">
-                </button>
+                <picture class="hobby-list_picture">
+                    <source srcset="
+                        ./img/hobies_by_section_social/hobies_by_section_social-768-1x.avif 1x,
+                        ./img/hobies_by_section_social/hobies_by_section_social-768-2x.avif 2x,
+                        " type="image/avif" media="(min-width: 768px)" />
+                    <source srcset="
+                        ./img/hobies_by_section_social/hobies_by_section_social-768-1x.webp 1x,
+                        ./img/hobies_by_section_social/hobies_by_section_social-768-2x.webp 2x,
+                        " type="image/webp" media="(min-width: 768px)" />
+                    <source srcset="
+                        ./img/hobies_by_section_social/hobies_by_section_social-768-1x.jpg 1x,
+                        ./img/hobies_by_section_social/hobies_by_section_social-768-2x.jpg 2x,
+                        " media="(min-width: 768px)" />
+                    <source srcset="
+                        ./img/hobies_by_section_social/hobies_by_section_social-480-1x.avif 1x,
+                        ./img/hobies_by_section_social/hobies_by_section_social-480-1x.avif 2x,
+                        " type="image/avif" media="(max-width: 767.9px)" />
+                    <source srcset="
+                        ./img/hobies_by_section_social/hobies_by_section_social-480-1x.webp 1x,
+                        ./img/hobies_by_section_social/hobies_by_section_social-480-1x.webp 2x,
+                        " type="image/webp" media="(max-width: 767.9px)" />
+                    <source srcset="
+                        ./img/hobies_by_section_social/hobies_by_section_social-480-1x.jpg 1x,
+                        ./img/hobies_by_section_social/hobies_by_section_social-480-1x.jpg 2x,
+                        " media="(max-width: 767.9px)" />
+                    <img src="./img/hobies_by_section_social/hobies_by_section_social-480-1x.jpg"
+                        class="hobby-list_picture" alt="hobies-intelligence" loading="lazy" />
+                </picture>
                 <h2 class="hobby-list__title">Соціальні</h2>
             </li>
             <li class="hobby-list__item">
-                <button class="hobby-list__button">
-                    <img class="hobby-list_picture" src="./img/hobbies/study.jpg" alt="">
-                </button>
+                <picture class="hobby-list_picture">
+                    <source srcset="
+                        ./img/hobies_by_section_intelligence/hobies_by_section_intelligence-768-1x.avif 1x,
+                        ./img/hobies_by_section_intelligence/hobies_by_section_intelligence-768-2x.avif 2x,
+                        " type="image/avif" media="(min-width: 768px)" />
+                    <source srcset="
+                        ./img/hobies_by_section_intelligence/hobies_by_section_intelligence-768-1x.webp 1x,
+                        ./img/hobies_by_section_intelligence/hobies_by_section_intelligence-768-2x.webp 2x,
+                        " type="image/webp" media="(min-width: 768px)" />
+                    <source srcset="
+                        ./img/hobies_by_section_intelligence/hobies_by_section_intelligence-768-1x.jpg 1x,
+                        ./img/hobies_by_section_intelligence/hobies_by_section_intelligence-768-2x.jpg 2x,
+                        " media="(min-width: 768px)" />
+                    <source srcset="
+                        ./img/hobies_by_section_intelligence/hobies_by_section_intelligence-480-1x.avif 1x,
+                        ./img/hobies_by_section_intelligence/hobies_by_section_intelligence-480-1x.avif 2x,
+                        " type="image/avif" media="(max-width: 767.9px)" />
+                    <source srcset="
+                        ./img/hobies_by_section_intelligence/hobies_by_section_intelligence-480-1x.webp 1x,
+                        ./img/hobies_by_section_intelligence/hobies_by_section_intelligence-480-1x.webp 2x,
+                        " type="image/webp" media="(max-width: 767.9px)" />
+                    <source srcset="
+                        ./img/hobies_by_section_intelligence/hobies_by_section_intelligence-480-1x.jpg 1x,
+                        ./img/hobies_by_section_intelligence/hobies_by_section_intelligence-480-1x.jpg 2x,
+                        " media="(max-width: 767.9px)" />
+                    <img src="./img/hobies_by_section_intelligence/hobies_by_section_intelligence-480-1x.jpg"
+                        class="hobby-list_picture" alt="hobies-intelligence" loading="lazy" />
+                </picture>
                 <h2 class="hobby-list__title">Інтелектуальні</h2>
             </li>
         </ul>
