@@ -1,20 +1,17 @@
 <header class="header">
     <div class="container header__container">
         <div class="header__wraper">
-            <button class="header__menu header-menu">
-                    <img src="./img/svg/menu.svg" class="header-menu__picture" alt="picture" loading="lazy" />
-            </button>
-            <form class="header__search header-search" action="" method="get">
-                <input class="header-search__input" type="text" placeholder="пошук...">
-            </form>
-            <button class="header__avatar header-avatar">
+            <a class="header__menu header-menu" href="#">
+                    <img class="header-menu__picture" src="./img/svg/menu.svg"  alt="picture" loading="lazy" />
+            </a>
+            <a class="header__avatar header-avatar" href="#">
                 <picture class="header-avatar__picture">
                     <source srcset="
                     ./img/svg/avatar.svg,
                     " type="image/svg" media="(max-width: 767.9px)" />
                     <img src="./img/svg/avatar.svg" class="header-avatar__picture" alt="avatar" loading="lazy" />
                 </picture>
-            </button>
+            </a>
         </div>
     </div>
 </header>

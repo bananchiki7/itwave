@@ -42,7 +42,6 @@
     transform: translate(-50%, -50%);
     width: min-content;
     padding-inline: 39.71px 31.73px;
-    font-family: "Kdam Thmor";
     font-size: 15px;
     line-height: 2;
     color: $color-yellow;
@@ -59,7 +58,6 @@
   }
 
   &__button-write {
-    display: none;
     padding: 6.5px 21px;
     margin-left: 268px;
     font-family: Inter;
@@ -105,7 +103,6 @@
     background-color: inherit;
   }
 
-  // display: none;
 }
 
 .review-list {
@@ -195,7 +192,7 @@
     }
   }
   .review-form {
-    margin-left: 26px;
+    padding-left: 26px;
 
     &__input {
       margin-bottom: 14px;

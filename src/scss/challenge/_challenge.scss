@@ -32,7 +32,7 @@
     transform: translate(-50%, -50%);
     width: min-content;
     padding-inline: 39.71px 31.73px;
-    font-family: "Kdam Thmor";
+    font-family: "Fixel Text";
     font-size: 15px;
     line-height: 2;
     color: $color-yellow;
@@ -57,7 +57,7 @@
   }
 
   &__text-result {
-    font-family: K2D;
+    font-family: "Fixel Text";
     font-size: 12px;
     font-weight: 700;
     line-height: 1.3;
@@ -67,7 +67,7 @@
   &__text-score {
     padding: 4.5px 13px;
     border: 1px solid $color-yellow;
-    font-family: K2D;
+    font-family: "Fixel Text";
     font-size: 12px;
     font-weight: 700;
     line-height: 1.3;
@@ -127,7 +127,7 @@
   }
 
   &__item {
-    font-family: K2D;
+    font-family: "Fixel Text";
     font-size: 12px;
     font-weight: 700;
     line-height: 1.3;
@@ -160,7 +160,7 @@
     position: relative;
     display: flex;
     padding-left: 50px;
-    font-family: "K2D", serif;
+    font-family: "Fixel Text", serif;
     font-size: 12px;
     font-weight: 700;
     line-height: 1.3;

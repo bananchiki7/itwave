@@ -1,0 +1,148 @@
+.history {
+    padding: 90px 0 100% 0;
+    background-color: $color-light-purple;
+
+    &__container {
+        width: 382px;
+    }
+
+    &__link {
+        position: absolute;
+        top: 45px;
+    }
+
+    &__picture {
+        width: 20px;
+        height: 20px;
+    }
+
+    &__lists {
+        display: flex;
+        gap: 41px;
+        padding-top: 21px;
+        border-top: 3px solid $color-pink;
+    }
+}
+
+.history-titles {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 21px;
+
+    &__title {
+        font-size: 15px;
+        line-height: 1.2;
+        color: $color-yellow;
+    }
+}
+
+.history-hobbies {
+    width: calc((100% - 41px) / 2);
+    padding: 0 10px;
+    border-radius: 15px;
+    background-color: $color-yellow;
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        border-bottom: 1px solid $color-purple;
+    }
+
+    &__item:last-child {
+        border-bottom: none;
+    }
+
+    &__link {
+        font-size: 25px;
+        line-height: 1.2;
+        color: $color-black;
+        word-break: break-word;
+    }
+}
+
+.history-challenges {
+    width: calc((100% - 41px) / 2);
+    padding: 0 10px;
+    border-radius: 15px;
+    background-color: $color-pink;
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        padding: 14px 0;
+        border-bottom: 1px solid $color-purple;
+    }
+
+    &__item:last-child {
+        border-bottom: none;
+    }
+
+    &__link {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.3;
+        color: $color-dark-purple;
+        word-break: break-word;
+    }
+}
+
+@media (max-width: 479px) {
+    .history {
+
+        &__container {
+            width: calc(310px + (382 - 310) * ((100vw - 320px) / (479 - 320)));
+        }
+    }
+
+    .history-hobbies {
+        &__link {
+            font-size:  calc(15px + (25 - 15) * ((100vw - 320px) / (479 - 320)));
+        }
+    }
+
+    .history-challenges {
+        &__link {
+            font-size:  calc(12px + (14 - 12) * ((100vw - 320px) / (479 - 320)));
+        }
+    }
+
+}
+
+@media (min-width: 768px) {
+    .history {
+
+        &__container {
+            width: 677px;
+        }
+
+        &__picture {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .history-titles {
+        &__title {
+            font-size: 25px;
+            line-height: 1.2;
+        }
+    }
+
+    .history-hobbies {
+        &__item {
+            padding: 13px 0;
+        }
+    }
+
+    .history-challenges {
+        &__item {
+            padding: 17px 0;
+        }
+
+        &__link {
+            font-size: 15px;
+        }
+    }
+
+}
