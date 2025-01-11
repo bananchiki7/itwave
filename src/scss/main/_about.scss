@@ -52,7 +52,7 @@
     right: 157px;
     width: 200px;
     height: 58px;
-    padding: 2.5px 29px;
+    padding: 2.5px 15px;
     background-color: $color-pink;
     border-radius: 0 25px 0 0;
   }
@@ -85,7 +85,7 @@
     &__card-find {
       right: calc(90px + (157 - 90) * ((100vw - 320px) / (479 - 320)));
       width: calc(180px + (200 - 180) * ((100vw - 320px) / (479 - 320)));
-      padding: 2.5px calc(20px + (29 - 20) * ((100vw - 320px) / (479 - 320)));
+      padding: 2.5px calc(10px + (15 - 10) * ((100vw - 320px) / (479 - 320)));
     }
   }
 }
