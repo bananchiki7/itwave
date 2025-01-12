@@ -151,12 +151,37 @@
       line-height: 1.4;
     }
 
-    &__link {
-      color: $color-yellow;
-    }
-
-    &__link:visited {
-      color: $color-yellow;
-    }
   }
+}
+
+@media (min-width: 1440px){
+  .hobbies {
+		&__list {
+      padding: 50px 40px;
+		}
+
+		&__item {
+		}
+
+		&__button {
+		}
+
+		&__picture {
+		}
+
+		&__text {
+		}
+
+		&__link {
+		}
+
+		&__line {
+		}
+}
+.hobbies-line {
+
+		&__button {
+		}
+
+}
 }

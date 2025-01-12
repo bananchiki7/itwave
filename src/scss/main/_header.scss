@@ -62,12 +62,14 @@
       height: 55px;
     }
   }
+
   .header-menu {
     &__picture {
       width: 35px;
       height: 35.42px;
     }
   }
+
   .header-avatar {
     &__picture {
       width: 45px;
@@ -76,3 +78,27 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .header {
+    padding: 10px 0;
+    border-bottom: 35px solid $color-grey;
+  }
+
+  .header-menu {
+    &__picture {
+      width: 70px;
+      height: 69px;
+    }
+  }
+
+  .header-avatar {
+    width: 85px;
+    height: 80px;
+
+    &__picture {
+      width: 76px;
+      height: 64px;
+    }
+  }
+
+}
