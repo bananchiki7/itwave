@@ -17,23 +17,16 @@
     position: relative;
   }
 
-  &__button {
+  &__picture {
     width: 180px;
     height: 150px;
     border: none;
     border-radius: 0 0 0 25px;
   }
 
-  &__button:hover {
+  &__picture:hover {
     box-shadow: rgba(0, 0, 0, 0.56) 0px 15px 50px 4px;
     transition: 0.5s;
-  }
-
-  &__picture {
-    display: block;
-    height: inherit;
-    width: inherit;
-    border-radius: 0 0 0 25px;
   }
 
   &__text {
@@ -58,6 +51,7 @@
     background-color: $color-pink;
   }
 }
+
 .hobbies-line {
   &__button {
     width: 250px;
@@ -90,11 +84,10 @@
     &__list {
       column-gap: calc(10px + (23 - 10) * ((100vw - 320px) / (479 - 320)));
       row-gap: calc(100px + (135 - 100) * ((100vw - 320px) / (479 - 320)));
-      padding: calc(25px + (32 - 25) * ((100vw - 320px) / (479 - 320)))
-        calc(20px + (28 - 20) * ((100vw - 320px) / (479 - 320)));
+      padding: calc(25px + (32 - 25) * ((100vw - 320px) / (479 - 320))) calc(20px + (28 - 20) * ((100vw - 320px) / (479 - 320)));
     }
 
-    &__button {
+    &__picture {
       width: calc(125px + (180 - 125) * ((100vw - 320px) / (479 - 320)));
       height: calc(110px + (150 - 110) * ((100vw - 320px) / (479 - 320)));
     }
@@ -109,6 +102,7 @@
       padding: calc(20px + (25 - 20) * ((100vw - 320px) / (479 - 320))) 0;
     }
   }
+
   .hobbies-line {
     &__button {
       width: calc(190px + (250 - 190) * ((100vw - 320px) / (479 - 320)));
@@ -126,14 +120,13 @@
       row-gap: 128px;
     }
 
-    &__button {
+    &__picture {
       width: 286px;
       height: 185px;
     }
 
     &__text {
       font-size: 20px;
-      font-weight: 700;
       line-height: 1.5;
     }
 
@@ -142,46 +135,46 @@
       padding: 15px 0;
     }
   }
+
   .hobbies-line {
     &__button {
       width: 350px;
       height: 70px;
       font-size: 30px;
-      font-weight: 700;
+      font-weight: 500;
       line-height: 1.4;
     }
-
   }
 }
 
-@media (min-width: 1440px){
+@media (min-width: 1440px) {
   .hobbies {
-		&__list {
+    &__list {
+      column-gap: 88px;
+      row-gap: 186px;
       padding: 50px 40px;
-		}
+    }
+    &__picture {
+      width: 388px;
+      height: 270px;
+    }
 
-		&__item {
-		}
+    &__text {
+      top: 38px;
+      font-size: 35px;
+      line-height: 0.8;
+    }
 
-		&__button {
-		}
+  }
 
-		&__picture {
-		}
+  .hobbies-line {
+    top: 338px;
+    height: 145px;
 
-		&__text {
-		}
-
-		&__link {
-		}
-
-		&__line {
-		}
-}
-.hobbies-line {
-
-		&__button {
-		}
-
-}
+    &__button {
+      width: 476px;
+      height: 102px;
+      font-size: 50px;
+    }
+  }
 }

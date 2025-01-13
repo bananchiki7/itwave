@@ -8,7 +8,7 @@
     background-color: $color-light-purple;
   }
 
-  &__link{
+  &__link {
     color: $color-yellow;
   }
 
@@ -24,8 +24,8 @@
 
   &__button:hover {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 25px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     transition: 0.5s;
   }
 
@@ -36,7 +36,7 @@
   flex-direction: column;
   row-gap: 15px;
 
-  &__name{
+  &__name {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -57,9 +57,9 @@
     background-color: inherit;
   }
 
-  &__line{
+  &__line {
     width: 100%;
-    border-bottom: 1px solid $color-yellow;
+    border-bottom: 3px solid $color-yellow;
   }
 
   &__wraper {
@@ -94,6 +94,7 @@
       font-weight: 700;
     }
   }
+
   .reviews-list {
 
     &__button {
@@ -113,6 +114,43 @@
 
     &__text {
       font-size: 15px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .reviews {
+
+    &__container {
+      padding: 38px 78px 75px 78px;
+    }
+
+    &__button {
+      margin-bottom: 35px;
+      padding: 6px 56px;
+      font-size: 35px;
+      font-weight: 400;
+      line-height: 0.8;
+    }
+  }
+
+  .reviews-list {
+    &__name {
+      row-gap: 30px;
+    }
+
+    &__button {
+      margin-left: 108px;
+      font-size: 18px;
+    }
+    &__picture {
+      width: 55px;
+      height: 50px;
+    }
+
+    &__text {
+      padding-top: 12px;
+      font-size: 18px;
     }
   }
 }
