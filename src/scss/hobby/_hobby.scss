@@ -40,6 +40,7 @@
     background-color: inherit;
   }
 }
+
 .hobby-list {
   &_picture {
     width: 100%;
@@ -69,14 +70,14 @@
     color: $color-white;
   }
 
-  &__link{
+  &__link {
     width: 100%;
   }
 }
 
 @media (max-width: 479px) {
   .hobby {
-    &__container{
+    &__container {
       width: calc(310px + (400 - 310) * ((100vw - 320px) / (479 - 320)));
     }
 
@@ -88,6 +89,7 @@
       width: calc(190px + (305 - 190) * ((100vw - 320px) / (479 - 320)));
     }
   }
+
   .hobby-list {
     &__title {
       bottom: calc(70px + (95 - 70) * ((100vw - 320px) / (479 - 320)));
@@ -97,10 +99,43 @@
   }
 }
 
-@media (min-width: 768px){
-  .hobby{
+@media (min-width: 768px) {
+  .hobby {
     &__container {
       width: 690px;
+    }
+
+    &__picture {
+      width: 28px;
+      height: 28px;
+    }
+
+    &__input {
+      width: 528px;
+      height: 48px;
+    }
+
+    &__input::placeholder {
+      font-size: 20px;
+      font-weight: 1.2;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .hobby {
+    &__container {
+      width: 900px;
+    }
+
+    &__picture {
+      width: 32px;
+      height: 32px;
+    }
+
+    &__input {
+      width: 615px;
+      height: 48px;
     }
   }
 }
