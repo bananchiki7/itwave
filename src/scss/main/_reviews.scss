@@ -59,7 +59,7 @@
 
   &__line {
     width: 100%;
-    border-bottom: 3px solid $color-yellow;
+    border-bottom: 1px solid $color-yellow;
   }
 
   &__wraper {
@@ -91,7 +91,6 @@
     &__button {
       padding: 0 33px;
       font-size: 25px;
-      font-weight: 700;
     }
   }
 
