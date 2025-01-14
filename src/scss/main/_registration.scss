@@ -32,3 +32,14 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .registration {
+    height: 520px;
+    background-image: url("../img/main/avtorization/avtorization-1440-1x.jpg");
+
+    &__line {
+      height: 80px;
+    }
+  }
+}

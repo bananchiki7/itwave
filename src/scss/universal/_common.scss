@@ -20,6 +20,14 @@ body{
   }
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex-grow: 1;
+}
+
 .is-hidden {
   position: absolute;
   width: 1px;

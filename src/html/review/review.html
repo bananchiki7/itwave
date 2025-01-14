@@ -1,10 +1,22 @@
 <section class="review">
     <div class="review__wrapper">
-            <a class="review__link" href="./index.html">
-                <img class="review__picture" src="./img/svg/arrowLeft.svg" alt="">
-            </a>
+        <a class="review__link" href="./index.html">
+            <img class="review__picture" src="./img/svg/arrowLeft.svg" alt="">
+        </a>
         <h3 class="review__title">Відгуки</h3>
         <picture class="review__background">
+            <source srcset="
+            ./img/review/rewievs/rewievs-1440-1x.avif 1x,
+            ./img/review/rewievs/rewievs-1440-2x.avif 2x,
+            " type="image/avif" media="(min-width: 1440px)" />
+            <source srcset="
+            ./img/review/rewievs/rewievs-1440-1x.webp 1x,
+            ./img/review/rewievs/rewievs-1440-2x.webp 2x,
+            " type="image/webp" media="(min-width: 1440px)" />
+            <source srcset="
+            ./img/review/rewievs/rewievs-1440-1x.jpg 1x,
+            ./img/review/rewievs/rewievs-1440-2x.jpg 2x,
+            " media="(min-width: 1440px)" />
             <source srcset="
             ./img/review/rewievs/rewievs-768-1x.avif 1x,
             ./img/review/rewievs/rewievs-768-2x.avif 2x,
