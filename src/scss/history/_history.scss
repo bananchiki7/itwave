@@ -8,7 +8,7 @@
 
     &__link {
         position: absolute;
-        top: 45px;
+        top: 105px;
     }
 
     &__picture {
@@ -38,6 +38,7 @@
 
 .history-hobbies {
     width: calc((100% - 41px) / 2);
+    height: fit-content;
     padding: 0 10px;
     border-radius: 15px;
     background-color: $color-yellow;
@@ -63,6 +64,7 @@
 
 .history-challenges {
     width: calc((100% - 41px) / 2);
+    height: fit-content;
     padding: 0 10px;
     border-radius: 15px;
     background-color: $color-pink;
@@ -97,13 +99,13 @@
 
     .history-hobbies {
         &__link {
-            font-size:  calc(15px + (25 - 15) * ((100vw - 320px) / (479 - 320)));
+            font-size: calc(15px + (25 - 15) * ((100vw - 320px) / (479 - 320)));
         }
     }
 
     .history-challenges {
         &__link {
-            font-size:  calc(12px + (14 - 12) * ((100vw - 320px) / (479 - 320)));
+            font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (479 - 320)));
         }
     }
 
@@ -111,7 +113,6 @@
 
 @media (min-width: 768px) {
     .history {
-
         &__container {
             width: 677px;
         }
@@ -119,6 +120,10 @@
         &__picture {
             width: 30px;
             height: 30px;
+        }
+
+        &__link{
+            top: 145px;
         }
     }
 
@@ -145,4 +150,56 @@
         }
     }
 
+}
+
+@media (min-width: 1440px) {
+    .history {
+        padding-top: 190px;
+
+        &__container {
+            width: 872px;
+        }
+
+        &__picture{
+            width: 50px;
+            height: 50px;
+        }
+
+        &__link{
+            top: 200px;
+        }
+
+        &__lists {
+            border-top: 5px solid $color-pink;
+        }
+    }
+
+    .history-titles {
+
+        &__title {
+            font-size: 35px;
+        }
+    }
+
+    .history-hobbies {
+
+        &__item {
+            padding: 30px 0;
+        }
+
+        &__link {
+            font-size: 50px;
+        }
+    }
+
+    .history-challenges {
+
+        &__item {
+            padding: 30px 0;
+        }
+
+        &__link{
+            font-size: 32px;
+        }
+    }
 }

@@ -1,4 +1,5 @@
 .header {
+  position: sticky;
   padding: 5px 0 6px 0;
   border-bottom: 20px solid $color-grey;
   background-color: $color-dark-purple;
@@ -12,7 +13,7 @@
 
   &-menu__picture {
     width: 18.69px;
-    height: 17.74px;
+    height: 18px;
     border: none;
     background-color: inherit;
   }
