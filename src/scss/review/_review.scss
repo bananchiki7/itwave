@@ -58,7 +58,8 @@
   }
 
   &__button-write {
-    padding: 6.5px 21px;
+    width: 120px;
+    height: 25px;
     margin-left: 268px;
     font-family: Inter;
     font-size: 10px;
@@ -79,7 +80,7 @@
     padding: 8px 7px;
     margin-bottom: 10px;
     font-family: Inter;
-    font-size: 12px;
+    font-size: 15px;
     color: $color-white;
     border: 1px solid $color-yellow;
     border-radius: 10px;
@@ -87,22 +88,34 @@
   }
 
   &__button {
-    padding: 6px 14.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: self-end;
+    width: 96px;
+    height: 24px;
     font-family: Inter;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.2;
     border: none;
     background-color: $color-pink;
+    cursor: pointer;
   }
 
   &__button-cross {
-    position: absolute;
-    top: 9px;
-    right: 12px;
+    width: 15px;
+    height: 15px;
+    margin-bottom: 12px;
     border: none;
     background-color: inherit;
+    cursor: pointer;
   }
 
+  &__picture {
+    width: 25px;
+    height: 25px;
+    margin-right: 18px;
+  }
 }
 
 .review-list {
@@ -122,7 +135,7 @@
     padding: 4px 10px;
     margin-left: 40px;
     font-family: "Inter", serif;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 1.2;
     color: $color-white;
     white-space: nowrap;
@@ -150,7 +163,7 @@
   &__text {
     margin-top: 17px;
     font-family: Inter;
-    font-size: 10px;
+    font-size: 13px;
     line-height: 1.2;
     color: $color-white;
   }
@@ -186,11 +199,13 @@
     }
 
     &__button-write {
-      padding: 8px 9px;
-      margin-left: 311px;
+      width: 135px;
+      height: 35px;
+      margin-left: 328px;
       font-size: 15px;
     }
   }
+
   .review-form {
     padding-left: 26px;
 
@@ -199,10 +214,12 @@
     }
 
     &__button {
-      padding: 8px 9px;
+      width: 122px;
+      height: 32px;
       font-size: 15px;
     }
   }
+
   .review-list {
     &__picture {
       width: 33px;
@@ -213,4 +230,78 @@
       font-size: 13px;
     }
   }
+}
+
+@media (min-width: 1440px) {
+  .review {
+
+    &__background{
+      height: 100px;
+    }
+
+    &__picture {
+      width: 25px;
+      height: 25px;
+    }
+
+    &__container {
+      width: 910px;
+      padding: 53px 106px 130px 56px;
+    }
+
+    &__button-write {
+      width: 212px;
+      height: 42px;
+      margin-left: 535px;
+      font-size: 20px;
+    }
+  }
+
+  .review-form {
+    padding-left: 80px;
+
+
+    &__button-cross {
+      width: 30px;
+      height: 30px;
+    }
+
+    &__picture-cross {
+      width: 30px;
+      height: 30px;
+    }
+
+    &__input {
+      height: 160px;
+      font-size: 20px;
+    }
+
+    &__button {
+      width: 180px;
+      height: 37px;
+      font-size: 20px;
+    }
+  }
+
+  .review-list {
+
+    &__button {
+      margin-left: 85px;
+      font-size: 20px;
+    }
+
+    &__wraper {
+      column-gap: 31px;
+    }
+
+    &__picture {
+      width: 52px;
+      height: 48px;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+  }
+
 }

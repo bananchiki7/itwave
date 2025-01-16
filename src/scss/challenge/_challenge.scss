@@ -11,8 +11,8 @@
   &__container {
     width: 370px;
   }
-  
-  &__link{
+
+  &__link {
     position: absolute;
     top: 50%;
     left: 45px;
@@ -59,7 +59,7 @@
   &__text-result {
     font-family: "Fixel Text";
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.3;
     color: $color-white;
   }
@@ -69,7 +69,7 @@
     border: 1px solid $color-yellow;
     font-family: "Fixel Text";
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.3;
     color: $color-white;
   }
@@ -107,9 +107,7 @@
   }
 
   &__button-cross {
-    position: absolute;
-    top: 9px;
-    right: 12px;
+    margin-bottom: 10px;
     border: none;
     background-color: inherit;
   }
@@ -143,6 +141,7 @@
     background-color: inherit;
   }
 }
+
 .challenge-form {
   &__list {
     display: flex;
@@ -180,11 +179,14 @@
     border: 3px solid $color-yellow;
     border-radius: 5px;
     background-color: transparent;
-    .challenge-form__input:checked ~ & {
+
+    .challenge-form__input:checked~& {
       border: 1px solid transparent;
       background-color: $color-yellow;
     }
-    transition: background-color 0.5s, border 0.5s;
+
+    transition: background-color 0.5s,
+    border 0.5s;
   }
 
   &__line {
@@ -209,7 +211,12 @@
 
   .challenge-card {
     margin: 0 110px 50px 110px;
+
+    &__button-cross {
+      margin-bottom: 18px;
+    }
   }
+
   .challenge-form {
     &__list {
       flex-direction: row;
@@ -219,6 +226,111 @@
 
     &__item {
       width: 350px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .challenge {
+
+    &__wrapper {
+      height: 110px;
+    }
+
+    &__title {
+      font-size: 25px;
+    }
+
+    &__background {
+      height: 110px;
+    }
+
+    &__picture{
+      width: 30px;
+      height: 30px;
+    }
+
+    &__container {
+      width: 900px;
+    }
+
+    &__navigation {
+      margin-top: 26px;
+      margin-bottom: 100px;
+    }
+
+    &__text-result {
+      font-size: 23px;
+    }
+
+    &__text-score {
+      font-size: 25px;
+      border: 3px solid $color-yellow;
+    }
+  }
+
+  .challenge-navigation {
+
+    &__list {
+      column-gap: 45px;
+    }
+
+    &__item {}
+
+    &__button {
+      padding: 8px 26px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  .challenge-card {
+
+    &__button-cross {
+      width: 35px;
+      height: 35px;
+    }
+
+    &__picture-cross {
+      width: 35px;
+      height: 35px;
+    }
+
+    &__input {
+      height: 220px;
+      font-size: 25px;
+    }
+
+    &__button {
+      padding: 13px 20px;
+      font-size: 20px;
+    }
+  }
+
+  .challenge-form {
+
+    &__list {
+      column-gap: 38px;
+    }
+
+    &__item {
+      width: 430px;
+    }
+
+    &__label {
+      padding-left: 70px;
+      font-size: 20px;
+    }
+
+    &__input-decor {
+      margin-left: -70px;
+      width: 35px;
+      height: 35px;
+    }
+
+    &__line {
+      border-bottom: 3px solid $color-yellow;
     }
   }
 }
