@@ -14,6 +14,7 @@ export default defineConfig({
         nested: resolve(__dirname, "src/hobby.html"),
         nestedTwo: resolve(__dirname, "src/review.html"),
         nestedFour: resolve(__dirname, "src/challenge.html"),
+        nestedFive: resolve(__dirname, "src/sport.html"),
       },
     },
     outDir: "../dist",
