@@ -1,0 +1,18 @@
+.request-loader-wrapper {
+  background-color: $color-black-opacity;
+  backdrop-filter: blur(2px);
+}
+
+.request-loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid $color-purple;
+  border-right-color: $color-yellow;
+  animation: l2 0.9s infinite linear;
+}
+@keyframes l2 {
+  to {
+    transform: rotate(1turn);
+  }
+}

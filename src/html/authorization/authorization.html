@@ -1,0 +1,49 @@
+<section class="authorization">
+  <div class="container authorization__container">
+    <form class="authorization-form">
+      <div class="authorization-form__box">
+        <h1 class="authorization__title">Вхід в аккаунт</h1>
+        <a class="authorization-form__close-link" href="index.html">
+          <img
+            class="authorization-form__close"
+            src="./img/svg/crossPurple.svg#crossPurple"
+            alt="close page"
+          />
+        </a>
+        <ul class="authorization-form-fields">
+          <li class="authorization-form-fields__item">
+            <label class="authorization-form-fields__label">
+              електронна пошта
+              <input
+                class="authorization-form-fields__input"
+                type="email"
+                autocomplete="email"
+                title="Невірний запис. Почта має містити домен"
+                placeholder="введіть електронну пошту"
+                name="email"
+                required
+              />
+            </label>
+          </li>
+          <li class="authorization-form-fields__item">
+            <label class="authorization-form-fields__label">
+              пароль
+              <input
+                class="authorization-form-fields__input authorization-form-fields__input_check"
+                type="password"
+                autocomplete="current-password"
+                pattern=".{8,}"
+                title="Введіть не менше 8 символів"
+                placeholder="введіть пароль"
+                name="password"
+                required
+              />
+            </label>
+          </li>
+        </ul>
+      </div>
+        <button class="authorization-form__btn-submit">готово</button>
+    </form>
+    <button class="authorization__btn-register">зареєструватись</button>
+  </div>
+</section>

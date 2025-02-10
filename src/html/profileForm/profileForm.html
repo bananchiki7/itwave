@@ -1,0 +1,74 @@
+<section class="profileForm">
+  <div class="container profileForm__container">
+    <form class="profileForm-form">
+      <a class="profileForm-form__close-link" href="index.html">
+        <img
+          class="profileForm-form__close"
+          src="./img/svg/crossPurple.svg#crossPurple"
+          alt="close page"
+        />
+      </a>
+      <ul class="profileForm-form-fields">
+        <label class="profileForm-form__img-label">
+          <div class="img-wrapp">
+            <img
+              class="profileForm-form__img"
+              src="./img/svg/avatar.svg"
+              alt="default user photo"
+              accept="image/png, image/jpeg, image/jpg"
+            />
+          </div>
+          <input
+            class="profileForm-form__img-input is-hidden"
+            accept="image/png, image/jpeg, image/svg"
+            name="file"
+            type="file"
+          />
+        </label>
+        <li class="profileForm-form-fields__item">
+          <label class="profileForm-form-fields__label">
+            <span>нікнейм</span>
+            <input
+              class="profileForm-form-fields__input"
+              type="text"
+              pattern=".{1,40}"
+              autocomplete="username"
+              title="Введіть не більше 40 символів"
+              placeholder="придумайте ім’я"
+              name="name"
+            />
+          </label>
+        </li>
+        <li class="profileForm-form-fields__item">
+          <label class="profileForm-form-fields__label">
+            <span>дата народження</span>
+            <input
+              class="profileForm-form-fields__input"
+              type="text"
+              pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}"
+              autocomplete="bday"
+              title="Дата повина бути у форматі дд/мм/рррр"
+              placeholder="дд/мм/рррр"
+              name="birthDay"
+            />
+          </label>
+        </li>
+        <li class="profileForm-form-fields__item">
+          <label class="profileForm-form-fields__label">
+            <span>номер телефону</span>
+            <input
+              class="profileForm-form-fields__input"
+              type="tel"
+              pattern="^[1-9]\d{1,3}\d{9}$"
+              autocomplete="tel"
+              title="Номер телефону складається з коду країни і 9 цифр"
+              placeholder="починайте з коду країни"
+              name="phone"
+            />
+          </label>
+        </li>
+      </ul>
+      <button class="profileForm-form__btn-submit">готово</button>
+    </form>
+  </div>
+</section>
