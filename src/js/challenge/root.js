@@ -6,4 +6,5 @@ export const root = {
     formBtn: document.querySelector(".challenge-card__button"),
     formTextArea: document.querySelector(".challenge-card__input"),
     challengeList: document.querySelector(".challenge-form__list"),
+    formList: document.querySelector(".challenge__form"),
 }

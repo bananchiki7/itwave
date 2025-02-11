@@ -10,11 +10,8 @@ export async function getChallengeOther() {
 
     const challengesListOther = await getChallengeListOther();
     console.log(challengesListOther);
+    
+    root.challengeList.innerHTML = challengesListOther.map(challengesListOther => createChallengeCard(data)).join("");
 
-    if(challengesListOther !== "[]"){
-        console.log(12);
-        
-        root.challengeList.innerHTML = challengesListOther.map(challengesListOther => createChallengeCard(data)).join("");
-    } 
     removeRequestLoader()
 }

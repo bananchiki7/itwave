@@ -29,6 +29,7 @@ export function setAuthHeader() {
 export async function checkToken(data) {
     setAuthHeader();
     const answer = await axios.get(`/auth/token`, data);
+    console.log(answer);
     return answer.data;
 }
 
@@ -65,7 +66,6 @@ export async function postReview(data) {
 
 export async function getReviews() {
     const answer = await axios.get("/review/list");
-    console.log(answer.data);
     return answer.data;
 }
 
@@ -97,21 +97,24 @@ export async function postChallenge(data) {
 export async function getChallengeListAll() {
     setAuthHeader();
     const answer = await axios.get("/challange/list/all");
-    console.log(answer.data);
     return answer.data;
 }
 
 export async function getChallengeListOther() {
-    setAuthHeader();
-    const answer = await axios.get("/challange/list/other");
-    console.log(answer.data);
-    return answer.data;
+    try {
+        setAuthHeader();
+        const answer = await axios.get("/challange/list/other");
+        return answer.data;
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 export async function getChallengeListDone() {
     setAuthHeader();
     const answer = await axios.get("/challange/list");
-    console.log(answer.data);
+    console.log(answer);
+    
     return answer.data;
 }
 
@@ -123,4 +126,29 @@ export async function deleteChallenge(id) {
     } catch (error) {
         console.log(error);
     }
+}
+
+export async function getUserHobbies() {
+    setAuthHeader();
+    const answer = await axios.get("/hobby/user/list");
+    return answer.data;
+}
+
+export async function addChallenge(id, data) {
+    setAuthHeader();
+    const answer = await axios.patch(`/challange/update/status/${id}`, data,{
+        headers: {
+            "Content-Type": "multipart/form-data",
+        },
+    });
+    console.log(answer);
+    
+    return answer.data;
+}
+
+export async function getHobbies(id) {
+    console.log(id);
+    const answer = await axios.get(`hobby/list?type=${id}`);
+    
+    return answer.data;
 }

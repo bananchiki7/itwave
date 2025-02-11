@@ -5,4 +5,5 @@ export const root = {
     formButton: document.querySelector(".review-form__button"),
     formTextArea: document.querySelector(".review-form__input"),
     reviewList: document.querySelector(".review__list"),
+    
 }
