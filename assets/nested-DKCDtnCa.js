@@ -1,0 +1,1 @@
+import{r as o}from"./mainLoader-DACqXSaj.js";/* empty css              */import{h as e}from"./hobbyList-QLlKo8xR.js";const i={listHobbies:document.querySelector(".hobbies__list")};i.listHobbies.addEventListener("click",e);o();

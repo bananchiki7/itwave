@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>It wave</title>
-  <script type="module" crossorigin src="/itwave/assets/main-55h9rYAO.js"></script>
-  <link rel="modulepreload" crossorigin href="/itwave/assets/mainLoader-jdqN2vow.js">
-  <link rel="modulepreload" crossorigin href="/itwave/assets/createChallengeCard-Bd-O0JPJ.js">
+  <script type="module" crossorigin src="/itwave/assets/main-C5emRAv9.js"></script>
+  <link rel="modulepreload" crossorigin href="/itwave/assets/mainLoader-DACqXSaj.js">
+  <link rel="modulepreload" crossorigin href="/itwave/assets/hobbyList-QLlKo8xR.js">
+  <link rel="modulepreload" crossorigin href="/itwave/assets/createChallengeCard-7a2C_XTl.js">
   <link rel="modulepreload" crossorigin href="/itwave/assets/changePage-BhxG9jDn.js">
   <link rel="modulepreload" crossorigin href="/itwave/assets/createReviewCard-Gxzgn367.js">
   <link rel="stylesheet" crossorigin href="/itwave/assets/index-QPdQAKCL.css">
@@ -102,7 +103,7 @@
         <section class="hobbies">
     <div class="container hobbies__container">
         <ul class="hobbies__list">
-            <li class="hobbies__item">
+            <li class="hobbies__item" data-id="1">
                 <a class="hobbies__link" href="#">
                     <picture class="hobbies__picture">
                         <source srcset="/itwave/assets/art-1440-1x-C1xfZBhG.avif 1x, /itwave/assets/art-1440-2x-DwcWBC9s.avif 2x" type="image/avif" media="(min-width: 1440px)" />
@@ -119,7 +120,7 @@
                 </a>
                 <h3 class="hobbies__text">Мистецтво</h3>
             </li>
-            <li class="hobbies__item">
+            <li class="hobbies__item" data-id="2">
                 <a class="hobbies__link" href="./sport.html">
                         <picture class="hobbies__picture">
                             <source srcset="/itwave/assets/gym-1440-1x-CNweMHZs.avif 1x, /itwave/assets/gym-1440-2x-BCQ5Yp_L.avif 2x" type="image/avif" media="(min-width: 1440px)" />
@@ -142,7 +143,7 @@
                     <a class="hobbies-line__link" href="hobby.html">Всі розділи</a>
                 </button>
             </div>
-            <li class="hobbies__item">
+            <li class="hobbies__item" data-id="3">
                 <a class="hobbies__link" href="#">
                     <picture class="hobbies__picture">
                         <source srcset="data:image/avif;base64,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 1x, /itwave/assets/sunset-1440-2x-BzlogvnX.avif 2x" type="image/avif" media="(min-width: 1440px)" />
@@ -160,7 +161,7 @@
                 </a>
                 <h3 class="hobbies__text">Соціальні</h3>
             </li>
-            <li class="hobbies__item">
+            <li class="hobbies__item" data-id="4">
                 <a class="hobbies__link" href="#">
                     <picture class="hobbies__picture">
                         <source srcset="/itwave/assets/math-1440-1x-BdwNSSpi.avif 1x, /itwave/assets/math-1440-2x-BgOkQPJU.avif 2x" type="image/avif" media="(min-width: 1440px)" />
