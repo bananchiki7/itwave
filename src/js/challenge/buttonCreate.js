@@ -9,7 +9,7 @@ export function buttonCreate(event) {
     const text = root.formTextArea.value;
 
     if (text !== "") {
-        // postChallenge({ text })
+        postChallenge({ text })
         root.formCreate.reset()
         getChallengeList()
     }

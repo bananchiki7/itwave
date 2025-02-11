@@ -102,6 +102,7 @@ export async function getChallengeListAll() {
 }
 
 export async function getChallengeListOther() {
+    setAuthHeader();
     const answer = await axios.get("/challange/list/other");
     console.log(answer.data);
     return answer.data;

@@ -199,6 +199,11 @@
     margin-left: 73px;
     border-bottom: 1px solid $color-yellow;
   }
+
+  &__link{
+    font-size: 16px;
+    color: $color-dark-purple;
+  }
 }
 
 @media (max-width: 479px) {
@@ -231,6 +236,10 @@
 
     &__item {
       width: 350px;
+    }
+
+    &__link{
+      font-size: 20px;
     }
   }
 }
@@ -280,8 +289,6 @@
     &__list {
       column-gap: 45px;
     }
-
-    &__item {}
 
     &__button {
       padding: 8px 26px;
@@ -336,6 +343,10 @@
 
     &__line {
       border-bottom: 3px solid $color-yellow;
+    }
+
+    &__link{
+      font-size: 26px;
     }
   }
 }
