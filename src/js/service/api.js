@@ -78,3 +78,48 @@ export async function deleteReview(id) {
         console.log(error);
     }
 }
+
+export async function postChallenge(data) {
+    setAuthHeader();
+    try {
+        const answer = await axios.post("/challange/create", data, {
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
+        return answer.data;
+    } catch (error) {
+        console.error("Axios Error:", error.response ? error.response.data : error.message);
+        throw error;
+    }
+}
+
+export async function getChallengeListAll() {
+    setAuthHeader();
+    const answer = await axios.get("/challange/list/all");
+    console.log(answer.data);
+    return answer.data;
+}
+
+export async function getChallengeListOther() {
+    const answer = await axios.get("/challange/list/other");
+    console.log(answer.data);
+    return answer.data;
+}
+
+export async function getChallengeListDone() {
+    setAuthHeader();
+    const answer = await axios.get("/challange/list");
+    console.log(answer.data);
+    return answer.data;
+}
+
+export async function deleteChallenge(id) {
+    try {
+        setAuthHeader();
+        const answer = await axios.delete(`/challange/delete/${id}`);
+        return answer.data;
+    } catch (error) {
+        console.log(error);
+    }
+}

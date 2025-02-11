@@ -1,5 +1,6 @@
 .challenge {
   padding-bottom: 187px;
+  height: 100%;
   background-color: $color-light-purple;
 
   &__wrapper {
@@ -139,6 +140,10 @@
     border: none;
     border-radius: 5px;
     background-color: inherit;
+  }
+
+  &__button:hover{
+    box-shadow: 4px 4px 16px -6px $color-pink;
   }
 }
 
