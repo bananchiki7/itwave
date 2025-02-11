@@ -36,7 +36,7 @@ export async function redactUser(data) {
     setAuthHeader();
     const answer = await axios.patch(`/user/update`, data, {
         headers: {
-            "Content-Type": "application/json",
+            "Content-Type": "multipart/form-data",
         },
     });
     return answer.data;

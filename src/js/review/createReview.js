@@ -11,7 +11,7 @@ export function createReview(event) {
     console.log(event.currentTarget);
     
     if(description !== ""){
-        // postReview({description})
+        postReview({description})
         getReviewsList()
     }
     openComment()

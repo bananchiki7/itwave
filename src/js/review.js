@@ -7,4 +7,6 @@ getReviewsList()
 
 root.buttonWrite.addEventListener("click", openComment);
 
+root.formCross.addEventListener("click", openComment);
+
 root.form.addEventListener("submit", createReview)

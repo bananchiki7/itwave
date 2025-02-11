@@ -5,7 +5,7 @@ export function createReviewCard(data) {
                     <div class="review-list__line"></div>
                 </div>
                 <div class="review-list__wraper">
-                    <img src="${data.creator.photo}" alt="avatar">
+                    <img class="review-list__picture" src="${data.creator.photo}" alt="avatar">
                     <p class="review-list__text"> ${data.description}</p>
                 </div>
             </li>`;

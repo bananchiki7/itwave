@@ -50,8 +50,8 @@
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-        width: 178px;
-        height: 175px;
+        width: 150px;
+        height: 150px;
         border-radius: 10px;
         background-color: $color-purple;
     }
@@ -160,7 +160,8 @@
         }
 
         &__wraper {
-            height: 119px;
+            height: 100px;
+            width: 100px;
             margin: 0;
         }
 
@@ -208,8 +209,8 @@
         }
 
         &__wraper {
-            width: 217px;
-            height: 226px;
+            width: 200px;
+            height: 200px;
         }
 
         &__picture {

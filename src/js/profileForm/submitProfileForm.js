@@ -16,6 +16,8 @@ export async function submitProfileForm(event) {
   try {
     const formEl = event.currentTarget;
     const formData = createFormData(formEl);
+    console.log(formData);
+    
     if (isRedactPage()) {
       await setRedact(formData);
     } else {
