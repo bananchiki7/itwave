@@ -1,4 +1,4 @@
-import{h as a,m as n,r as l}from"./mainLoader-DACqXSaj.js";/* empty css              */import{s as o,r as t}from"./requestLoader-B4C3fQYz.js";function r(e){return`
+import{h as a,m as n,r as l}from"./mainLoader-DW3ObRYu.js";/* empty css              */import{s as o,r as t}from"./requestLoader-BRcFcZj5.js";function r(e){return`
         <li class="history-challenges__item">
                 <a class="history-challenges__link" href="#">${e.text}</a>
             </li>
