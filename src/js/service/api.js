@@ -1,7 +1,8 @@
 import axios from "axios";
 import { getToken } from "../universal/token/getToken";
 
-axios.defaults.baseURL = "https://hoby-api.onrender.com";
+// axios.defaults.baseURL = "https://hoby-api.onrender.com";
+axios.defaults.baseURL = "https://hoby-api-iv12.onrender.com";
 
 export async function signup(data) {
     const answer = await axios.post(`/auth/signup`, data, {
